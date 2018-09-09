@@ -1,0 +1,161 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img, embed, object, video{
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #2d3c49;
+    padding: 15px;
+}
+
+.logo {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.logo-img{
+    width: 40px;
+    margin: 0; 
+}
+
+.title{
+    width:100%;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.6em;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -1px
+}
+
+h2{ 
+    text-transform: uppercase;  
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1.5px
+}
+
+.banner{
+    margin: 0;
+    border-bottom: solid 2px #7d97ad;
+}
+
+.banner img{ vertical-align: bottom; }
+
+.featured-work{
+    margin: 0;
+    padding: 0;
+}
+
+.featured-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+h3{
+    color: #2d3c49;
+    margin: 1em 0 1em 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+article{
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
+figure{ margin: 0; }
+
+figcaption p{
+    margin: 1em 0 0.2em 0;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+figcaption a{
+    margin: 0.2em;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    color: #7d97ad;
+    text-decoration: none;
+}
+
+@media screen and (min-width:650px)
+{
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        color: #2d3c49;
+        padding: 15px;
+    }
+
+    .logo-img{ width: 80px; }
+
+    .logo{ text-align: left; }
+
+    h1{ text-align: right; }
+    
+    h2{ text-align: right; }
+
+    h3{ margin-bottom: 1em; }
+
+    .featured-work{ padding: 1em; }
+
+    article{
+        max-width: 48%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width:1000px)
+{
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: #2d3c49;
+        padding: 15px;
+    }
+
+    .logo-img{ width: 80px; }
+
+    .featured-work{ padding: 1em; }
+
+    h3{ 
+        text-align: left; 
+        margin: 1em 0 0.5em 0;
+    }
+
+    article{
+        max-width: 30%;
+        margin-bottom: 2em;
+    }
+}
+
